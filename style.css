@@ -1,0 +1,168 @@
+body {
+    margin: 0px 49px;
+    padding-left: 183px;
+}
+
+h1 {
+    margin: 0;
+}
+
+div {
+    margin-left: 18%;
+    padding: 0.1px 16px;
+    text-align: justify;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: teal;
+    position: fixed;
+    width: 170px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.menu .active {
+    color: white;
+}
+
+.menu li a:hover:not(.active) {
+    background-color: #183145;
+    color: white;
+}
+
+img {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+.box {
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    margin: 32px;
+    border: 1px solid;
+    position: relative;
+    border-radius: 22px;
+    float: left;
+}
+
+.box a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.box:hover .sombra {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0;
+    top: 0;
+    border-radius: 22px;
+}
+
+.card1 {
+    background-color: azure;
+}
+
+.card2 {
+    background-color: blanchedalmond;
+}
+
+.card3 {
+    background-color: linen;
+}
+
+h4.formata {
+    text-align: center;
+}
+
+div.relative {
+    position: relative;
+    text-align: end;
+    font-weight: 800;
+}
+
+.img {
+    background: url("midia/tecnologia.jpg") no-repeat;
+    background-position-x: 170px;
+    background-position-y: 0px;
+    background-color: black;
+}
+
+@media screen and (max-width: 1650px) {
+    .box {
+        margin: 32px 10px;
+        width: 310px;
+    }
+    .box h4 {
+        font-size: 14px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .box {
+        margin: 32px 5px;
+        width: 255px;
+        padding: 15px;
+    }
+    .img {
+        background-position-x: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .box {
+        float: none;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .img {
+        background-position-x: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+    img {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ellen Mezaki e Leidiane Aguiar">
+    <meta name="description" content="noticias">
+    <meta name="Keyword" content="noticias tecnologias,miniaturizacao,IBM" />
+    <link rel="shortcut icon" href="midia/tecn.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Tecnologia</title>
+    <style>
+        header {
+            margin-top: 0;
+            background-color: teal;
+            position: relative;
+            padding: 5px;
+            color: white;
+        }
+        
+        header li a {
+            display: block;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        .active {
+            color: white;
+        }
+        
+        header li a:hover:not(.active) {
+            background-color: #183145;
+            color: white;
+        }
+        
+        p,
+        h3 {
+            text-indent: 30px;
+            text-align: justify;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .formata {
+            text-align: justify;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        img {
+            float: left;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 10px;
+        }
+        
+        body {
+            text-align: justify;
+            background-color: rgb(228, 228, 252);
+            padding: 20px;
+            margin: 0px;
+            padding-left: 185px;
+        }
+        
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: teal;
+            position: fixed;
+            width: 170px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+        .menu li a {
+            display: block;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        .menu .active {
+            color: white;
+        }
+        
+        .menu li a:hover:not(.active) {
+            background-color: #183145;
+            color: white;
+        }
+        
+        footer {
+            margin-top: 0;
+            background-color: teal;
+            position: relative;
+            padding-top: 1px;
+            padding-bottom: 5px;
+        }
+        
+        .voltaraotop {
+            background-color: teal;
+            padding: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .voltaraotop:hover {
+            background-color: #183145;
+        }
+        
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            body {
+                padding: 20px;
+            }
+            .menu {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
+            img {
+                float: none;
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 320px) {
+            body {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body id="a0">
+    <nav>
+        <ul class="menu">
+            <li><a href="site_noticias.html">Home</a></li>
+            <li><a href="site_noticias.html">Notícias</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="formulario_contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Tecnologia</h1>
+        <p class="formata">A área da tecnologia dia após dia vem se atualizando, e com isso criando produtos cada vez mais ágeis e poderosos. Podemos perceber isso quando observamos algumas das últimas novidades na área, como as que serão apresentadas a seguir</p>
+        <ol>
+            <li><a href="#nt">Nova técnica de miniaturização</a></li>
+            <li><a href="#pl">Processador de luz neuromórfico</a></li>
+            <li><a href="#pp">Primeiro processador de 2 nanômetros do mundo</a></li>
+        </ol>
+    </header>
+    <article>
+        <section>
+            <picture>
+                <source media="(max-width: 750px)" src="miniaturizacao1.jpg">
+                <source media="(max-width: 1050px)" src="miniaturizacao2.jpeg">
+                <img src="midia/miniaturizacao2.jpeg" alt="Miniaturização">
+            </picture>
+            <h2 id="nt">Nova técnica de miniaturização pode levar microchips a escalas subnanométricas</h2>
+
+            <p>Pesquisadores MIT e da Universidade da Califórnia, ambos dos EUA, e da TSMC, de Taiwan, descobriram um novo modo para criar conexões elétricas, fator essencial para miniaturização de componentes que fazem parte dos chips de computador.</p>
+            <p>Eles utilizaram materiais atomicamente finos para substituir o silício durante o processo de fabricação de novos transistores. A solução encontrada pelos cientistas inclui o uso de um semimetal, o bismuto, no lugar de metais comuns para conectar
+                todo o material.</p>
+            <p>“Resolvemos um dos maiores problemas na miniaturização de dispositivos semicondutores, a resistência de contato entre um eletrodo de metal e um material semicondutor de monocamada”, diz um dos responsáveis pelo estudo, Cong Su.</p><br>
+            <h3>Miniaturização limitada?</h3>
+            <p>Em 1965 o então presidente da Intel, Gordon Earle Moore, profetizou que a quantidade de transistores que poderiam ser colocados em uma mesma área dobraria a cada 18 meses, mesmo que os custos de fabricação fossem mantidos. Mas essa regra tem
+                esbarrado nos limites físicos e tecnológicos dos processos de miniaturização atuais.</p>
+            <p>“O rápido ritmo de miniaturização dos transistores estagnou por volta do ano 2000, até que um novo desenvolvimento que permitia uma arquitetura tridimensional de dispositivos semicondutores em um chip quebrou o impasse em 2007 e o progresso
+                foi retomado. Mas agora podemos estar à beira de outro gargalo”, explica o professor Yuxuan Lin.</p>
+            <p>Agora, com a nova abordagem proposta pelos pesquisadores, materiais ultrafinos como o dissulfeto de molibdênio podem contornar esses limites de miniaturização de componentes eletrônicos, deixando para trás as barreiras impostas pelo silício.</p>
+            <h3>A solução</h3>
+            <p>A interação entre metais e materiais semicondutores produz um fenômeno chamado de gap induzido por metal ou barreira de Schottky, capaz de interromper o fluxo de carga elétrica. Ao usar um semimetal com propriedades eletrônicas situadas entre
+                metais e semicondutores, os pesquisadores conseguiram um alinhamento adequado de energia, eliminando a interrupção do fluxo de eletricidade.</p>
+            <p>Esses materiais ultrafinos e bidimensionais têm apenas um ou alguns átomos de espessura e isso reduz drasticamente o que os cientistas chamam de comprimento do canal. Valores que atualmente giram em torno de cinco a dez nanômetros nos chips
+                de última geração, poderiam atingir uma escala subnanométrica com a utilização da nova tecnologia de miniaturização.</p>
+            <p>Para viabilizar a produção dos microchips da próxima geração, os pesquisadores também analisam outros materiais que pertencem à família de compostos conhecidos como dicalcogenetos de metais. Esses materiais podem apresentar propriedades semelhantes
+                ao dissulfeto de molibdênio, usado com sucesso durante os testes.</p>
+            <p>Encontrar uma forma de integrar a nova tecnologia a processos de fabricação em grande escala ainda deve demorar, mas o conceito dessa descoberta é um avanço real para a miniaturização de componentes e para a manutenção da Lei de Moore, pelo
+                menos durante os próximos anos.</p>
+            <h4><span class="italico">Fonte:</span></h4>
+            <p>
+                <cite>
+                    <span class="cite">https://canaltech.com.br/inovacao/nova-tecnica-de-miniaturizacao-pode-levar-microchips-a-escalas-subnanometricas-185101/</span>
+                </cite>
+            </p>
+            <a href="#a0" class="voltaraotop">Voltar ao topo </a>
+        </section>
+        <section>
+            <h2 id="pl">Processador de luz neuromórfico faz cálculos 1.000 vezes mais rápido</h2>
+            <picture>
+                <source media="(max-width: 750px)" src="processador-neuromorfico1.jpg">
+                <source media="(max-width: 1050px)" src="processador-neuromorfico.jpg">
+                <img src="midia/processador-neuromorfico.jpg" alt="Processador-neuromorfico">
+            </picture>
+            <p>Pesquisadores da Universidade Cidade de Hong Kong afirmam ter construído nada menos do que o "processador neuromórfico óptico mais rápido do mundo". Ser "óptico" significa que o processador funciona com luz, e não com eletricidade; ser "neuromórfico"
+                significa que sua lógica imita o funcionamento do cérebro humano; e ser o mais rápido do mundo é algo sempre bem-vindo.</p>
+            <p>O chip, projetado para rodar algoritmos de inteligência artificial, supera a marca de 10 trilhões de operações por segundo, o que é 1.000 vezes mais rápido do que o detentor do recorde de velocidade anterior.
+            </p>
+            <p>Embora processadores eletrônicos de última geração possam operar em velocidades ainda mais altas, são necessários dezenas de milhares de processadores paralelos - aqui, foi usado um único processador óptico.
+            </p>
+            <p>Ao ser testado no reconhecimento digital de textos escritos à mão - uma marca de referência comum em IA - ele atingiu uma precisão de quase 90%.</p>
+            <h3>Micropentes de frequência</h3>
+            <p>O segredo do avanço está em uma nova arquitetura de pentes de frequência, ou micropentes, estruturas em microescala que guiam e distribuem a luz para a realização das computações.</p>
+            <p>O micropente funciona como um arco-íris, substituindo dezenas de fontes de laser paralelas por diferentes comprimentos de onda. Os micropentes são essenciais no processamento óptico de informações porque são mais rápidos e menores do que qualquer
+                outra fonte de luz, além de não apresentarem o problema dos gargalos vistos na tecnologia eletrônica.
+            </p>
+            <p>A operação nessa velocidade sem precedentes foi possível justamente pela capacidade desse micropente em intercalar simultaneamente os dados no tempo, no comprimento de onda e nas dimensões espaciais. O processador permitiu a comparação rápida
+                de imagens em escala ultra-grande (250.000 píxeis), fazendo o reconhecimento de imagens de caracteres manuscritos com uma precisão de 88%.</p>
+            <p>"O processamento óptico tem a vantagem de superar o gargalo eletrônico, o que acabará por limitar a capacidade e a velocidade dos processadores eletrônicos atuais. Isso é especialmente importante para aplicações que requerem uma grande quantidade
+                de operações matemáticas complexas, como no processamento de imagens por inteligência artificial usando muitas camadas de neurônios artificiais interconectados.</p>
+            <p>"O chip micropente que desenvolvemos tem fatores de perda extremamente baixa e de qualidade muito alta. Ele tem linhas de frequência altamente uniformes e coerentes na saída. O estudo concluiu que o micropente pode ser um sistema óptico de
+                processamento de rede neural muito eficiente," disse o professor Sai Chu.</p>
+            <h4><span class="italico">Fonte:</span></h4>
+            <p><cite><span
+                        class="cite">https://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=processador-luz-neuromorfico&id=010150210504#.YLklEKhKjIW</span></cite>
+            </p>
+            <a href="#a0" class="voltaraotop">Voltar ao topo </a>
+        </section>
+        <section>
+            <h2 id="pp">IBM anuncia primeiro processador de 2 nanômetros do mundo</h2>
+            <picture>
+                <source media="(max-width: 750px)" src="2nanometro1.png">
+                <source media="(max-width: 1050px)" src="2nanometro.png">
+                <img src="midia/2nanometro.png" alt="Processador 2 nanômetros">
+            </picture>
+            <p>As atuais discussões a respeito da evolução dos semicondutores abordam tecnologias de 7, 5 e 3 nanômetros. Mas a IBM conseguiu ir mais longe: nesta quinta-feira (6), a companhia revelou o primeiro chip do mundo baseado em processo de fabricação
+                Nanosheet de 2 nanômetros. A novidade deve abrir caminho para processadores mais poderosos, mas que consomem muito menos energia.</p>
+            <p>Para ser mais exato, o design de 2 nanômetros permite ao chip um aumento de 45% de desempenho geral em relação a processadores de 7 nanômetros. Outra possibilidade é a de o desempenho ser equivalente ao de tecnologias de 7 nanômetros, mas
+                o consumo de energia cair em até 75%.</p>
+            <p>Isso é possível porque o novo padrão de 2 nanômetros é capaz de concentrar 50 bilhões de transistores em um wafer com tamanho aproximado ao de uma unha. Mais do que reduzir ou manter o espaço físico ocupado por um processador, o novo design
+                incrementa o desempenho, como já ficou claro, além de aumentar a confiabilidade e a eficiência do chip, de acordo com a IBM.</p>
+            <p>A empresa sinaliza ainda que a tecnologia poderá ser direcionada a diversos segmentos, de celulares a datacenters. Na primeira categoria, a IBM vê potencial para o chip aumentar em até quatro vezes a autonomia da bateria em relação às médias
+                atuais, o que poderia fazer a recarga do componente ser necessária apenas a cada quatro dias.</p>
+            <p>Com relação a datacenters, estima-se que esse tipo de operação responda por 1% da energia usada no mundo todo. Para a IBM, se os servidores de todos os datacenters forem substituídos por unidades baseadas em chips de 2 nanômetros, o consumo
+                poderá cair drasticamente e, com efeito, contribuir para a diminuição das emissões de carbono.</p>
+            <p>As possibilidades não se limitam a isso. A companhia aponta também que a nova tecnologia poderá aumentar o desempenho de notebooks, tornar mais rápida a identificação de obstáculos por veículos autônomos, acelerar aplicações de inteligência
+                artificial, incrementar a internet das coisas e por aí vai.</p>
+            <h3>Quando os chips de 2 nanômetros chegam?</h3>
+            <p>Não é para já. Teremos que esperar chips de 3 nanômetros serem introduzidos no mercado primeiro, por exemplo, o que não deve acontecer antes do segundo semestre de 2022. Além disso, a chegada de chips de 2 nanômetros dependerá das parcerias
+                ou acordos de licenciamento de tecnologia que a IBM estabelecer.</p>
+            <p>De todo modo, há boas chances de que chips baseados no processo de 2 nanômetros entrem em produção até o final de 2024.</p>
+            <h4><span class="italico">Fonte:</span></h4>
+            <p><cite><span
+                        class="cite">https://tecnoblog.net/439489/ibm-anuncia-primeiro-chip-tecnologia-2-nanometros/</span></cite>
+            </p>
+            <a href="#a0" class="voltaraotop">Voltar ao topo </a>
+            <h3>Tecnocast 187 – A crise global de chips</h3>
+            <p>O aumento no consumo de eletrônicos durante a pandemia está provocando uma escassez na oferta de semicondutores. As fabricantes não estavam preparadas para atender a essa demanda e esse descompasso deve afetar o preço dos produtos nos próximos
+                meses.
+            </p>
+            <p>Esse é o tema do Tenocast 187. Dê play e confira!</p>
+            <audio preload="none" controls>
+                <source src="midia/187 – A crise global de chips.mp3" type="audio/mp3">
+                <p>Seu navegador não suporta áudio <a href="187 – A crise global de chips.mp3" type="audio/mp3"></a></p>
+            </audio>
+        </section>
+    </article>
+    <footer>
+        <adress>
+            <p>Dúvidas? <a href="formulario_contato.html" title="Clique aqui" hreflang="pt-br"> Entre em
+                    contato.</a></p>
+        </adress>
+        <p>&copy;2021 - Tecinfo</p>
+    </footer>
+</body>
+
+</html>

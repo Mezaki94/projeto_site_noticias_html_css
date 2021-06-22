@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ellen Mezaki e Leidiane Aguiar">
+    <meta name="description" content="Feedback">
+    <meta name="Keyword" content="Feedback" />
+    <link rel="shortcut icon" href="midia/tecn.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<style>
+    label {
+        width: 120px;
+        margin: 1px 0;
+    }
+    
+    .lbradio {
+        margin-left: 7px;
+        margin-right: 30px;
+        text-align: center;
+    }
+    
+    .formulario {
+        padding: 11px;
+    }
+    
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: teal;
+        position: fixed;
+        width: 170px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+    }
+    
+    .menu li a {
+        display: block;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    
+    .menu .active {
+        color: white;
+    }
+    
+    .menu li a:hover:not(.active) {
+        background-color: #183145;
+        color: white;
+    }
+    
+    body {
+        margin: 0px;
+        padding: 20px;
+        font-family: sans-serif;
+        padding-left: 190px;
+        text-align: center;
+        background-color: rgb(233, 239, 252);
+    }
+    
+    .btn {
+        color: white;
+        background: cornflowerblue;
+        width: 100px;
+        border: 1px solid black;
+        cursor: pointer;
+        float: none;
+        font-size: 16px;
+        padding: 10px 0;
+        border-radius: 7px;
+    }
+    
+    .btn:hover {
+        color: cornflowerblue;
+        background: white;
+        border: 1px solid cornflowerblue;
+    }
+    
+    input[type=text]:focus,
+    textarea:focus,
+    textarea:focus-visible {
+        background-color: rgb(195, 229, 252);
+        border: 2px solid rgb(164, 218, 250);
+        outline: none;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid rgb(164, 218, 250);
+        border-radius: 5px;
+        background-color: rgb(203, 239, 248);
+        outline: none;
+    }
+    
+    textarea {
+        resize: none;
+        font-size: 16px;
+        border: 2px solid rgb(164, 218, 250);
+        background-color: rgb(203, 239, 248);
+        box-sizing: border-box;
+    }
+    
+    .divradio {
+        text-align: left;
+        margin: auto;
+        width: 200px;
+    }
+    
+    @media screen and (max-width: 992px) {
+        input[type=text],
+        input[type=email] {
+            width: auto;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        input[type=text],
+        input[type=email] {
+            width: 100%;
+        }
+        textarea {
+            max-width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        body {
+            padding: 20px;
+        }
+        .menu {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        body {
+            padding: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        body {
+            padding: 5px;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="site_noticias.html">Home</a></li>
+                <li><a href="site_noticias.html">Notícias</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="formulario_contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="formulario">
+        <h2>Visitante do Site</h2>
+
+        <p>1. Esta foi a primeira vez que você visitou o site?</p>
+        <input type="radio" id="site1" name="microfone" value="site1">
+        <label class="lbradio" for="site1">Sim</label>
+        <input type="radio" id="site2" name="microfone" value="site2">
+        <label class="lbradio" for="site2">Não</label>
+        <br><br>
+
+        <p>2. Qual foi o principal motivo que o trouxe ao site?</p>
+        <input type="text" id="motivo" name="motivo" value="" size="50"><br><br>
+
+        <p>3. Você achou o que precisava?</p>
+        <div class="divradio">
+            <input type="radio" id="s" name="resposta" value="s">
+            <label class="lbradio" for="s">Sim, tudo.</label><br><br>
+            <input type="radio" id="s1" name="resposta" value="s1">
+            <label class="lbradio" for="s1">Sim, uma parte.</label><br><br>
+            <input type="radio" id="n" name="resposta" value="n">
+            <label class="lbradio" for="n">Não, nada.</label><br><br>
+        </div>
+
+        <p>4. Diga quais informações você estava procurando.</p>
+        <textarea id="area" name="message" rows="10" cols="50" maxlength="350"></textarea><br><br>
+
+        <p>5. Qual é a probabilidade de você visitar o site novamente?</p>
+        <div class="divradio">
+            <input type="radio" id="opcao1" name="opcao" value="opcao1">
+            <label class="lbradio" for="opcao1">Muito provável.</label><br><br>
+            <input type="radio" id="opcao2" name="opcao" value="opcao2">
+            <label class="lbradio" for="opcao2">Provável.</label><br><br>
+            <input type="radio" id="opcao3" name="opcao" value="opcao3">
+            <label class="lbradio" for="opcao3">Não sei.</label><br><br>
+            <input type="radio" id="opcao4" name="opcao" value="opcao4">
+            <label class="lbradio" for="opcao4">Improvável.</label><br><br>
+            <input type="radio" id="opcao5" name="opcao" value="opcao5">
+            <label class="lbradio" for="opcao5">Muito improvável.</label><br><br><br>
+        </div>
+
+        <p>6. Adicione comentários, sugestões para melhoria do site. Agradecemos as sugestões e volte sempre.</p>
+        <textarea id="comentarios" name="message" rows="10" cols="50"></textarea><br><br>
+        <input class="btn" type="reset">
+        <input class="btn" type="Submit">
+
+
+    </form>
+</body>
+
+</html>
